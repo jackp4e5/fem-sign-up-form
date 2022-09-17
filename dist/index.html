@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/app.css">
+  <title>Frontend Mentor | Intro component with sign up form</title>
+</head>
+<body>
+
+  <main class="main">
+    <div class="description">
+      <h1 class="description__heading">Learn to code by watching others</h1>
+      <p class="description__text">
+        See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
+        but understanding how developers think is invaluable. 
+      </p>
+    </div>
+
+    <div class="content">
+      <div class="offer">
+        <p class="offer__text" >
+          <b class="offer__text--bold">Try it free 7 days</b> then $20/mo. thereafter
+        </p>
+      </div>
+
+      <form class="form">
+        <div class="image">
+          <input type="text" class="form__item"  placeholder="First Name" autocomplete="" >
+          <img class="image__svg" src="./img/icon-error.svg" alt="">
+        </div>
+        <div class="image">
+          <input type="text" class="form__item"  placeholder="Last Name " autocomplete="">
+          <img class="image__svg" src="./img/icon-error.svg" alt="">
+        </div>
+        <div class="image">
+          <input type="email" class="form__item"  placeholder="Email Address" autocomplete="">
+          <img class="image__svg" src="./img/icon-error.svg" alt="">
+        </div>
+        <div class="image">
+          <input type="password" class="form__item"  placeholder=" Password" autocomplete="">
+          <img class="image__svg" src="./img/icon-error.svg" alt="">
+        </div>
+
+        <button class="form__submit" type="submit">Claim your free trial</button>
+
+        <div class="terms-and-services">
+          By clicking the button, you are agreeing to our <span class="terms-and-services__span">Terms and Services</span>
+        </div>
+      </form>
+   </div>
+  </main> 
+
+</body>
+</html>

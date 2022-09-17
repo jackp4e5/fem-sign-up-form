@@ -20,7 +20,7 @@ function css ( done ){
         .pipe(sass())
         .pipe(postcss( [ autoprefixer(), cssnano()] ) )
         .pipe(sourcemaps.write('.'))
-        .pipe(dest('build/css'))
+        .pipe(dest('dist/css'))
   
       done();
   }
@@ -28,7 +28,7 @@ function css ( done ){
 
     return src('src/img/**/*')
            .pipe(imagemin({optimizationLevel: 3}))
-           .pipe(dest('build/img'))
+           .pipe(dest('dist/img'))
   }
   function versionWebp (){
       const opciones = {
@@ -36,7 +36,7 @@ function css ( done ){
       }
     return src('src/img/**/*.{png,jpg}')
               .pipe(webp(opciones))
-              .pipe(dest('build/img'))
+              .pipe(dest('dist/img'))
   }
   function versionAvif (){
     const opciones = {
@@ -44,7 +44,7 @@ function css ( done ){
       }
     return src('src/img/**/*.{png,jpg}')
               .pipe(avif(opciones))
-              .pipe(dest('build/img'))
+              .pipe(dest('dist/img'))
   }
   function dev (){
     watch('src/scss/**/*.scss', css);

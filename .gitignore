@@ -17,3 +17,6 @@ node_modules
 README.md
 README.template.md
 design
+src
+gulpfile.js
+package-lock.json
